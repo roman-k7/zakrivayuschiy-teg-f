@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="any" />
     <link rel="icon" href="./svg/favicon-optimized.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./svg/favicon-optimized.svg" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -17,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <a href="#" class="header__link">&lt;/html&gt;</a>
+      <a class="header__link">&lt;/html&gt;</a>
       <h1 class="header__title">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -69,7 +70,7 @@
               Мечты о будущем
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="html-1">
+              <button type="button" class="card__icon-button" aria-labelledby="html-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -134,7 +135,7 @@
               Начало учебы - хорошее время.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="html-2">
+              <button type="button" class="card__icon-button" aria-labelledby="html-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -197,7 +198,7 @@
               Хорошо получился первый спринт.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="css">
+              <button type="button" class="card__icon-button" aria-labelledby="css">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -258,7 +259,7 @@
               C хорошим настроем рванули во второй спринт.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="desigions">
+              <button type="button" class="card__icon-button" aria-labelledby="desigions">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -324,7 +325,7 @@
               Второй спринт был посложнее, но справились.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="care">
+              <button type="button" class="card__icon-button" aria-labelledby="care">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -383,7 +384,7 @@
               Я начал подозревать,что что-то не так.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="support">
+              <button type="button" class="card__icon-button" aria-labelledby="support">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -445,10 +446,10 @@
               откуда вы её черпали.
             </p>
             <p class="card__text">
-              Третий спринт я буду долго вспоминать, кружечки чая и бесонные ночи после работы.
+              я буду долго вспоминать, кружечки чая и бесонные ночи после работы.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="lifes-style">
+              <button type="button" class="card__icon-button" aria-labelledby="lifes-style">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -511,10 +512,10 @@
               Ведь часто путь — и есть результат.
             </p>
             <p class="card__text">
-              Ух четвертый спринт тоже был сложным, приходилось перечитывать новый материал по нескольку раз, чтобы понять как сделать этот проект. Спасибо всем за ваш труд в ЯП.
+              Ух четвертый спринт тоже был сложным, приходилось перечитывать новый материал по нескольку раз, чтобы все понять.
             </p>
             <div class="card__like-button-container">
-              <button class="card__icon-button" aria-labelledby="experience">
+              <button type="button" class="card__icon-button" aria-labelledby="experience">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
@@ -559,6 +560,7 @@
       </section>
 
       <button
+        type="button"
         class="button save-button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
@@ -587,10 +589,9 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <form>
+        <form method="dialog">
           <button
             class="button ok-button"
-            onclick="window['dialog-id'].close()"
             type="submit"
             aria-controls="dialog-id"
           >
